@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>SQA Assignment 4</title>
+</head>
+<body>
+        
+    <h1 style="color:blue; font-family:verdana;">Assignment 4</h1>
+
+    <form method="post" action="/show" id="details">
+        <table id="maintable" style="background-color:whitesmoke">
+            
+            <tr>
+            <td>Seller Name:</td>
+            <td><input type="text" id="seller" placeholder="Full Name" name= "dealer[seller]" required/></td>
+            <td>
+            <p id="errorName"></p>
+            </td>
+            </tr>
+            
+            <tr>
+            <td>Address:</td>
+            <td><input type="text" id="address" placeholder="Full Address" name= "dealer[address]" required/></td>
+            <td>
+            <p id="errorAddress"></p>
+            </td>
+            </tr>
+            
+            <tr>
+            <td>City:</td>
+            <td><input type="text" id="city" placeholder="City Name" name= "dealer[city]" required/></td>
+            <td>
+            <p id="errorCity"></p>
+            </td>
+            </tr>
+                           
+            <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" id="phone" placeholder="10 Digit" name= "dealer[phone]" required/></td>
+            <td>
+            <p id="errorphoneNumber"></p>
+            </td>
+            </tr>
+                                    
+            <tr>
+            <td>Email Address:</td>
+            <td><input type="text" id="emailAddress" placeholder="Email-id" name= "dealer[email]" required/></td>
+            <td>
+            <p id="erroremailAddress"></p>
+            </td>
+            </tr>
+                                    
+            <tr>
+            <td>Vehicle Make:</td>
+            <td><input type="text" id="make"   placeholder="Make" name= "dealer[make]" required/></td>
+            <td>
+            <p id="errorMake"></p>
+            </td>
+            </tr>
+                                                   
+            <tr>
+            <td>Vehicle Model:</td>
+            <td><input type="text" id="model"  placeholder="Model" name= "dealer[model]" required/></td>
+            <td>
+            <p id="errorModel"></p>
+            </td>
+            </tr>
+
+            <tr>
+            <td>Vehicle Year:</td>
+            <td><input type="text" id="year"  placeholder="Year" name= "dealer[year]" required/></td>
+            <td>
+            <p id="errorYear"></p>
+            </td>
+            </tr>
+                <tr>
+                    
+                    <td><button type="submit" class="btn btn-primary">Submit</button></td>
+                   
+                    <td><a href="/show">Search</a></td>           
+
+                </tr>
+        </table>
+    </form>
+    <script>
+            $("#details").validate();
+    </script>
+    <p style="font-family:verdana;"></p>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    </body>
+    <script src="validate.js"></script>
+</html>
